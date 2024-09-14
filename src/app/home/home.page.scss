@@ -1,27 +1,42 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+/* Estilo do título */
+ion-card-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #000000; /* cor de fundo preta */
+  color: #fcfcfc; /* cor do texto branco */
+  font-weight: bold;
+  padding: 20px; /* espaço interno ao redor do texto */
+  border-radius: 10px; /* cantos arredondados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* sombra leve para dar profundidade */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* transições suaves */
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+/* Efeito ao passar o mouse sobre o título */
+ion-card-title:hover {
+  transform: scale(1.05); /* aumenta ligeiramente ao passar o mouse */
+  box-shadow: 0 8px 16px rgba(243, 243, 243, 0.3); /* aumenta a sombra ao passar o mouse */
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+/* Estilo do conteúdo (nome e matrícula) */
+ion-card-content {
+  background-color: #000000;
+  font-family: 'Times New Roman', Times, serif;
+  color: #ffffff; /* cor do texto branco */
+  font-weight: bold;
+  padding: 15px; /* espaço interno para o conteúdo */
+  border-radius: 8px; /* cantos levemente arredondados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* sombra leve para o conteúdo */
+  margin-top: 10px; /* margem superior para separação do título */
+  text-align: center; /* Centraliza o conteúdo de texto */
 }
 
-#container a {
-  text-decoration: none;
+/* Estilo geral para o cartão */
+ion-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
